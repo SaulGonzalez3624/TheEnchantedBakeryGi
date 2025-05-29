@@ -600,7 +600,7 @@ button:hover {
   .landingPage h1{
     margin-left: 2rem;
     margin-right: 2rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0rem;
     width: 100%;
     text-align: center;
   }
@@ -1200,6 +1200,73 @@ img.productSubPhoto {
   margin: 0;
   padding: 0;
   font-weight: 600;
+}
+
+
+.threeAmigos.vertical {
+  display: none;
+}
+
+
+
+
+
+
+
+@media (max-width: 700px) {
+  .threeAmigos.normal {
+  display:none;
+}
+
+  .mainHoursContainer h1 {
+  margin: 1rem 0;
+  text-align: center;
+}
+
+  .threeAmigos.vertical{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .threeAmigos.vertical .visitUs {
+    width: 90%;
+  }
+
+  .threeAmigos.vertical .contactUs {
+    width: 90%;
+  }
+
+  .threeAmigos.vertical .maps {
+    width: 90%;
+    aspect-ratio: 2 / 1;
+  }
+
+  .dailyHours {
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+  }
+
+
+  .connector {
+    width: 40%;
+  }
+}
+
+@media (max-width: 500px) {
+  .connector {
+    width: 20%;
+  }
+}
+
+@media (max-width: 300px) {
+  .connector {
+    display: none;
+  }
 }
 
 
