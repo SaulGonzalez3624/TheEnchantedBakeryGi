@@ -130,6 +130,13 @@ html {
   }
 }
 
+@media (max-width: 500px) {
+  /* CSS that should be displayed if width is equal to or more than 800px goes here */
+  html {
+  font-size: 14px;
+  }
+}
+
 a {
   text-decoration: none;
 }
@@ -200,9 +207,8 @@ nav {
     display: flex;
     flex-direction: row;
     justify-content: end;
-    margin-right: 2rem;
     width: 60%;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 @media (max-width: 600px) {
@@ -381,7 +387,7 @@ button:hover {
   transform: rotate(-5deg);
   filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.5));
   transition: transform 0.3s ease; 
-  border: 1px blue solid;
+  border-radius: 15rem;
 }
 
 @media (max-width: 1110px) {
@@ -405,7 +411,6 @@ button:hover {
 }
 
 .landingPage {
-  border: 1px blue solid;
   margin-top: 1rem;
   margin-bottom: 6rem;
   min-height: 40vw;
@@ -493,7 +498,6 @@ button:hover {
 .ourSpecialties {
   margin-top: 0;
   text-align: center;
-  border: 1px red solid;
 }
 
 .ourSpecialties h2 {
@@ -798,10 +802,16 @@ button:hover {
   background-image: url("../Background Photos/Product-Page-Background.png");
 }
 
+.pageWrapper a.omgImTired {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
 .backButton {
-  height: 2.5rem;
   margin-top: 1rem;
   margin-left: 1rem;
+  margin-right: auto;
   display: flex;
   align-items: center;
   background-color: #904A41;
@@ -956,6 +966,60 @@ img.productSubPhoto {
 }
 
 
+
+.vert {
+  display:none;
+}
+
+
+@media (max-width: 760px) {
+.norm {
+  display:none
+}
+
+.vert {
+  display: flex;
+  padding: 1rem;
+
+}
+
+.vert h1 {
+    margin-top:0;
+}
+
+.vert .productPhotos {
+  margin-top: 2rem;
+}
+
+  .productContainer{
+  flex-direction: column;
+}
+
+.vert .productPhotos {
+  margin-top: 1rem;
+  width: 100%;
+}
+
+.vert .productText {
+  width: 100%;
+  float: none;
+}
+
+.vert .productCallContainer {
+  margin-top: 3rem;
+}
+
+
+.footerPrice h5{
+  color: #825512;
+  margin-top: 0;
+  margin-bottom: 0;
+  width: 100%;
+  padding-left: .2rem;
+  padding-right: .2rem;
+}
+
+}
 
 
 
