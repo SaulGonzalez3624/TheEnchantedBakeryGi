@@ -1,0 +1,1072 @@
+.poppins-thin {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  .poppins-extralight {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+  }
+  
+  .poppins-light {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .poppins-medium {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .poppins-semibold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  .poppins-bold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .poppins-extrabold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+  }
+  
+  .poppins-black {
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  .poppins-thin-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+  }
+  
+  .poppins-extralight-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: italic;
+  }
+  
+  .poppins-light-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  .poppins-regular-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .poppins-medium-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+  }
+  
+  .poppins-semibold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: italic;
+  }
+  
+  .poppins-bold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+  .poppins-extrabold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: italic;
+  }
+  
+  .poppins-black-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+  }
+  
+
+
+
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  font-family: Poppins, sans-serif !important;
+  scroll-behavior: smooth;
+  height: 100%-3rem;
+  padding:0;
+  margin: 0;
+}
+
+@media (min-width: 1440px) {
+  /* CSS that should be displayed if width is equal to or more than 800px goes here */
+  html {
+  font-size: 20px;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  margin:0;
+  padding: 0;
+  overflow-x: hidden;
+  background-size: cover;          /* Scales image to cover entire body */
+  background-repeat: no-repeat;    /* Important: prevents tiling */
+  background-attachment: fixed;
+  padding-top: 3rem;
+}
+
+h1 {
+  font-size: 3rem;
+  color: #3B0906;
+}
+
+h2 {
+  font-size: 2rem;
+  color: #3B0906;
+}
+
+h3 {
+  color: #3B0906;
+}
+
+h4 {
+  color: #3B0906;
+}
+
+h5 {
+  font-weight: 400;
+  color: #775652;
+  font-size: 1rem;
+}
+
+h6 {
+  color: #3B0906;
+}
+
+
+
+nav {
+    height:3rem; 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #FFF8F7;
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.3), /* Key Umbra */
+              0px 1px 3px 1px rgba(0, 0, 0, 0.15); /* Key Penumbra */
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    z-index: 100;
+}
+
+.logo img{
+    max-height: 3rem;
+    width: auto;
+    display: block;
+    margin-left: 2rem;
+}
+
+.navButtons {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    margin-right: 2rem;
+    width: 60%;
+    justify-content: space-between;
+}
+
+div #language img{
+    margin-right: .2rem;
+    height: 1.15rem;
+    color: #3B0906;
+}
+
+.navButtons div{
+    display: flex;
+    align-items: center;
+    height: 2rem;
+}
+
+.navButtons div h4 {
+    font-weight: 550;
+    color: #3B0906;
+}
+
+.navUnderline {
+    text-decoration-thickness: 3px;
+    text-underline-offset: 3px;
+}
+
+.footerPrice h5{
+  color: #825512;
+  margin-bottom: 0;
+  margin-left: .2rem;
+  width: 75%;
+}
+
+.footer {
+  height: 9rem;
+  background-color: #775652;
+}
+
+.footer .footerTitle {
+  font-weight: 500;
+  color: #FFFFFF;
+  padding-top: 1rem;
+  margin-bottom: 0;
+  margin-top:0;
+  margin-left: 1rem;
+}
+
+.footer .footerCopyright {
+  font-weight: 500;
+  color: #FFDDB7;
+  margin-top: 0;
+  font-size: 1.1rem;
+  margin-left: 1.7rem;
+}
+
+button {
+  transition: 0.3s ease;
+  font-family: Poppins, sans-serif;
+}
+button:hover {
+  transform: scale(1.1);
+}
+
+.pageWrapper {
+  display:flex;
+  flex-direction: column;
+  min-height: calc(100vh - 3rem);
+}
+
+.productContainer, .mainContainer{
+  flex-grow: 1;
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* THIS IS HOME PAGE SPECIFIC STUFF */
+
+.homeBody {
+  background-image: url('../../Background Photos/Landing-Page-Background.png');
+}
+
+
+.notice {
+  height: 3rem;
+  background-color: #904A41;
+  display: flex;
+  align-items: center;
+}
+
+.notice h3 {
+  color: white;
+  font-size: 1.4rem;
+  font-weight: 300;
+}
+
+.landingPage h1{
+  margin-left: 2rem;
+  margin-right: 2rem;
+  margin-bottom: 1rem;
+  width: 80%;
+}
+
+.landingPage h5{
+  margin-top: 1%;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  width: 45%;
+}
+
+.landingImg{
+  width: 60%;
+  float: right;
+  position: absolute;
+  top: 100px;
+  right: -60px;
+  transform: rotate(-5deg);
+  filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.5));
+  transition: transform 0.3s ease; 
+}
+
+.landingImg:hover {
+  transform: scale(1.1);
+}
+
+.landingPage {
+  margin-top: 2rem;
+  height:85vh;
+}
+
+.landingButtons {
+  margin-left: 5%;
+  margin-right: 40%;
+  margin-top: 10vh;
+  /*border: 1px, rgb(0, 0, 255), solid;*/
+  display: flex;
+  flex-direction: row;
+  width: 38%;
+  justify-content: space-between;
+
+}
+
+#landingButton1  {
+  border: 2px, #775652, solid;
+  background-color: #775652;
+  padding: 1rem .6rem;
+  display: flex;
+  align-items: center;
+  height: 2.5rem;
+  font-size: 2rem;
+  border-radius: 12px;
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.3), /* Key Umbra */
+            0px 1px 3px 1px rgba(0, 0, 0, 0.15); /* Key Penumbra */
+  transition: 0.3s ease;
+}
+
+#landingButton1 h6 {
+  color: #FFDAD5; 
+}
+
+#landingButton1:hover {
+  background-color: #FFDAD5;
+}
+
+#landingButton1:hover h6 {
+  color: #775652;
+}
+
+.landingButtons h6{
+  font-weight: 500;
+}
+
+#landingButton2  {
+  border: 2px, #775652, solid;
+  background-color: #FFDAD5;
+  color: #775652;
+  padding: 1rem .6rem;
+  display: flex;
+  align-items: center;
+  height: 2.5rem;
+  font-size: 2rem;
+  border-radius: 12px;
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.3), /* Key Umbra */
+             0px 1px 3px 1px rgba(0, 0, 0, 0.15); /* Key Penumbra */
+  transition: 0.3s ease;
+}
+
+#landingButton2 h6 {
+  color: #775652;
+}
+
+#landingButton2:hover {
+  background-color: #775652;
+  color: #FFDAD5;
+}
+
+#landingButton2:hover h6 {
+  color: #FFDAD5;
+}
+
+
+
+.ourSpecialties {
+  margin-top: 0;
+  text-align: center;
+}
+
+.ourSpecialties h2 {
+  margin-bottom: 1rem;
+}
+
+
+.specialtyCards {
+  padding-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.specialtyCards h5 {
+  font-weight: 500;
+  margin-left: .5rem;
+  margin-right: .5rem;
+  margin-bottom: 1rem;
+}
+
+.specialtyCards h3 {
+  font-size: 1.3rem;
+  margin-bottom: .8rem;
+  margin-top: .8rem;
+}
+
+.specialtyCards img {
+  width: 75%;
+  border-radius: 1000px;
+  border: 4px #904A41 solid;
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.3), /* Key Umbra */
+            0px 1px 3px 1px rgba(0, 0, 0, 0.15); /* Key Penumbra */
+}
+
+.cakeCard {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 250px;
+  background-color: #FFDAD5;
+  margin: 1rem;
+  border-radius: 48px;
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.3), /* Key Umbra */
+            0px 1px 3px 1px rgba(0, 0, 0, 0.15); /* Key Penumbra */
+}
+
+.pastriesCard {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 250px;
+  background-color: #FFDAD5;
+  margin: 1rem;
+  border-radius: 48px;
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.3), /* Key Umbra */
+            0px 1px 3px 1px rgba(0, 0, 0, 0.15); /* Key Penumbra */
+}
+
+.customCakeCard {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 250px;
+  background-color: #FFDAD5;
+  margin: 1rem;
+  border-radius: 48px;
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.3), /* Key Umbra */
+            0px 1px 3px 1px rgba(0, 0, 0, 0.15); /* Key Penumbra */
+}
+
+.learnMore {
+  background-color: #FFDDB7;
+  display: inline-flex;
+  padding: .2rem .8rem;
+  font-size: 1.2rem;
+  color: #825512;
+  border-radius: 1000px;
+  border: 2px #825512 solid;
+  margin-bottom: 1.2rem;
+  font-weight: 500;
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.3), /* Key Umbra */
+          0px 1px 3px 1px rgba(0, 0, 0, 0.05); /* Key Penumbra */
+}
+
+
+
+
+
+
+
+
+/* AFTER THIS IS THE MENU SPECIFIC CSS */
+
+.menuBody {
+  background-image: url('../../Background Photos/Menu-Page-Background2.png');
+}
+
+.menuMainText {
+  margin-left: 1.5rem;
+}
+
+.menuMainText h1 {
+  margin-top: 1rem;
+  margin-bottom: 0;
+}
+
+.menuMainText h5 {
+  margin-top: 0;
+}
+
+.menuSection {
+  margin-left: 1rem;
+}
+
+.menuSection h3 {
+  margin-bottom: 0;
+}
+
+.menuSection h6 {
+  margin-left: .1rem;
+  margin-top: 0;
+  margin-bottom: .4rem;
+  display:flex;
+  font-weight: 500;
+  color: #825512;
+}
+
+#scrollIcon {
+  height: 1rem;
+  width: auto;
+  margin-left: .1rem;
+}
+
+.menuScrolls {
+  display: flex;
+  width: 100%;
+  padding-bottom: .7rem;
+  padding-top: .7rem;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+
+.menuScrollCard {
+  display:flex;
+  flex-basis: calc(20% - 1rem);
+  flex-grow: 0; /* Don't let cards grow to fill a sparse last row */
+  flex-shrink: 0;
+  flex-shrink: 0;
+  background-color: #FFEDEA;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 15px;
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.3), /* Key Umbra */
+          0px 1px 3px 1px rgba(0, 0, 0, 0.15); /* Key Penumbra */
+  transition: all 0.15s ease;
+}
+
+.menuScrollCard:hover {
+  transform: scale(1.05);
+}
+
+.menuScrollCard img{
+  width: 100%;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.menuScrollCard h4 {
+  margin: 1rem 0;
+}
+
+#menuCakeSection,
+#menuFinePastriesSection,
+#menuCustomCakeSection { /* Add any other section IDs you might have */
+  scroll-margin-top: 1.8rem; /* ADJUST THIS VALUE! */
+                           /* It should be equal to or slightly LARGER than
+                              the height of your fixed navigation bar.
+                              If your navbar is 3.5rem or 4rem high,
+                              5rem should give enough clearance.
+                              Experiment with this value until it looks right. */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* NOW THIS IS THE PRODUCT PAGE CSS STUFF */
+
+.productBody {
+  background-image: url("../../Background Photos/Product-Page-Background.png");
+}
+
+.backButton {
+  height: 2.5rem;
+  margin-top: 1rem;
+  margin-left: 1rem;
+  display: flex;
+  align-items: center;
+  background-color: #904A41;
+  border: 0;
+  border-radius: 12px;
+  border: 2px #471613 solid;
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.3), /* Key Umbra */
+          0px 1px 3px 1px rgba(0, 0, 0, 0.15); /* Key Penumbra */
+}
+
+.backButton img {
+  width: 18px;
+  height: 18px;
+  margin-left: .1rem;
+  margin-right: 0;
+  margin-top: .3rem;
+  margin-bottom: .3rem;
+}
+
+.backButton h4 {
+  margin-top: .4rem;
+  margin-bottom: .4rem;
+  margin-left: .5rem;
+  margin-right: .1rem;
+  color: #FFF;
+  font-weight: 500;
+}
+
+.productContainer{
+  margin: auto;
+  width: 100%;
+  display:flex;
+  justify-content: space-around;
+}
+
+.productPhotos {
+  margin-top: 1rem;
+  width: 45%;
+}
+
+img.productPhoto {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 10;
+  display: block;
+  object-fit: cover;
+  border-radius: 28px;
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.3), /* Key Umbra */
+        0px 1px 3px 1px rgba(0, 0, 0, 0.15); /* Key Penumbra */
+  margin-bottom: .5rem;
+}
+
+
+.productSubPhotoContainer {
+  display: flex;
+  width: 100%;
+  padding-bottom: .7rem;
+  padding-top: .7rem;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 1rem;
+  padding-left: 1rem;
+}
+
+img.productSubPhoto {
+  display:flex;
+  width: calc((100% - 2 * 1.5rem) / 3);
+  flex-grow: 0; /* Don't let cards grow to fill a sparse last row */
+  flex-shrink: 0;
+  flex-shrink: 0;
+  border-radius: 15px;
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.3), /* Key Umbra */
+          0px 1px 3px 1px rgba(0, 0, 0, 0.15); /* Key Penumbra */
+  transition: all 0.15s ease;
+}
+
+.productText {
+  width: 50%;
+  float: right;
+}
+
+.productText h1 {
+  margin-top: 1rem;
+  margin-bottom: 0;
+}
+
+.productText h5 {
+  margin-top: 0;
+  font-size: 1.1rem;
+  padding-right: 1rem;
+}
+
+.productText h5 strong {
+  color:#3B0906;
+}
+
+
+.productStats {
+  margin-top: 2rem;
+}
+.productStats h5{
+  margin: .6rem 0rem;
+  font-weight: 500;
+}
+
+.productCallContainer {
+  width: 100%;
+  text-align: center;
+  margin-top: 3.5rem;
+}
+.productCall {
+  color: #825512;
+  border: 2px #825512 solid;
+  background-color: #FFDDB7;
+  border-radius: 24px;
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.3), /* Key Umbra */
+          0px 1px 3px 1px rgba(0, 0, 0, 0.15); /* Key Penumbra */
+}
+
+.productCall:hover {
+  transform: scale(1.05);
+}
+
+.productCall h5 {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-top: .6rem;
+  margin-bottom: 0;
+  padding: 0;
+  font-weight: 500;
+  color: #825512;
+}
+
+.productCallNumber {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+
+.productCallNumber h5{
+  margin-top: .4rem;
+  margin-bottom: .6rem;
+  margin-left: .3rem;
+}
+
+.productCallNumber img{
+  height: 18px;
+  width:18px;
+  margin-top: .4rem;
+  margin-bottom: .6rem;
+}
+
+
+
+
+
+
+
+/*Now im doing the hours and contact us but I call it hours for simplicity*/
+
+.hoursBody {
+  background-image: url("../../Background Photos/Hours-Page-Background.png");
+}
+
+.mainHoursContainer h1 {
+  margin-left: 1.5rem;
+  margin-top: 1rem;
+  margin-bottom: 0;
+}
+
+
+.threeAmigos {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.lefty {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 9vh;
+  width: 48%;
+}
+
+.visitUs {
+  background-color: #FFEDEA;
+  padding: 1rem;
+  border-radius: 20px;
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.3), /* Key Umbra */
+          0px 1px 3px 1px rgba(0, 0, 0, 0.15); /* Key Penumbra */
+}
+
+.visitUs h2 {
+  margin: 0;
+  margin-bottom: 1rem;
+}
+
+.visitUs h5 {
+  margin: 0;
+}
+
+.visitUs div {
+  display: flex;
+}
+
+.visitUs div img{
+  height: 1.375rem;
+  margin:0;
+  margin-right: .2rem;
+}
+
+.contactUs {
+  background-color: #FFEDEA;
+  padding: 1rem;
+  border-radius: 20px;
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.3), /* Key Umbra */
+          0px 1px 3px 1px rgba(0, 0, 0, 0.15); /* Key Penumbra */
+}
+
+.contactUs h2 {
+  margin: 0;
+  margin-bottom: 1rem;
+}
+
+.contactUs h5 {
+  margin: 0;
+}
+
+.contactUs div {
+  display: flex;
+}
+
+.contactUs div img{
+  height: 1.3rem;
+  margin:0;
+  margin-right: .2rem;
+}
+
+.righty {
+  padding: 2.5rem 2rem;
+  display: flex;
+  width: 55%;
+  align-items: center;
+  justify-content: center;
+}
+
+.maps {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  background-color: #FFEDEA;
+  background-image: url("../../Photos/maps.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.maps iframe {
+  border-radius: 20px;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.3), /* Key Umbra */
+        0px 1px 3px 1px rgba(0, 0, 0, 0.15); /* Key Penumbra */
+}
+
+.dailyHours {
+  background-color: #FFEDEA;
+  margin: 2rem 4rem;
+
+  padding: 1rem 1rem;
+  border-radius: 20px;
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.3), /* Key Umbra */
+        0px 1px 3px 1px rgba(0, 0, 0, 0.15); /* Key Penumbra */
+}
+
+.dailyHours h2 {
+  text-align: center;
+  margin: 0;
+
+}
+
+.dayContainer {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 1rem;
+}
+
+.day {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.day h4{
+  margin: 0;
+  padding: 0;
+  font-weight: 600;
+}
+
+.connector {
+  width:60%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 2rem;
+}
+
+.connector div {
+  margin-top:0.69134375rem;
+  margin-bottom:0.69134375rem;
+  height: 2px;
+  width: 100%;
+  background-color: #3B0906;
+}
+
+.time {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.time h4{
+  margin: 0;
+  padding: 0;
+  font-weight: 600;
+}
+
+
+
+
+
+
+
+
+/*Okay now its the sheet cake page yayyyyy my back hurts */
+
+.sheetBody {
+  background-image: url("../../Background Photos/Product-Page-Background.png");
+}
+
+.sheetBody .mainContainer{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.sheetCakeIntro {
+  margin:0;
+  margin-top: 1rem;
+  margin-left: 1.5rem;
+  width: 100%;
+}
+
+.sheetCakeIntro h1 {
+  margin: 0;
+}
+
+.sheetCakeIntro h5 {
+  margin: 0;
+  width: 85%;
+}
+
+.sheetCakeIntro h5 strong {
+  font-weight: 600;
+}
+
+.sheetCakeCardContainer {
+  margin: 0 auto;
+  padding-top: 3rem;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.sheetCakeCard {
+  background-color: #FFEDEA;
+  border-radius: 32px;
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.3), /* Key Umbra */
+        0px 1px 3px 1px rgba(0, 0, 0, 0.15); /* Key Penumbra */
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+
+}
+.sheetCakeCardLeft {
+  width: 50%;
+}
+
+.sheetName {
+  margin-top: 1rem;
+  margin-bottom: 0rem;
+  margin-left: 1.5rem;
+}
+
+.sheetStats {
+  margin-top: 1.5rem;
+  margin-bottom: 0rem;
+  margin-left: 1.5rem;
+}
+
+h5.sheetStats {
+  font-weight: 450;
+  line-height: 2rem;
+}
+
+.sheetBody .productCallContainer {
+  margin-top: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.sheetBody .productCallContainer button{
+  padding: .1rem .75rem;
+  width: 90%;
+}
+
+.sheetBody .productCallContainer button img {
+  height: 15px;
+  width: 15px;
+}
+
+
+.sheetCakeCardRight {
+  width: 50%;
+  padding: 1rem;
+}
+
+.sheetCakeCardRight .forImage {
+  width: 100%;
+  height: 100%;
+  background-image: url("../../Photos/Placeholder\ Image.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  border-radius: 24px;
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.3), /* Key Umbra */
+        0px 1px 3px 1px rgba(0, 0, 0, 0.15); /* Key Penumbra */
+}
