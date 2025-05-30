@@ -388,6 +388,7 @@ button:hover {
   filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.5));
   transition: transform 0.3s ease; 
   border-radius: 15rem;
+  overflow-x: hidden;
 }
 
 @media (max-width: 1110px) {
@@ -1014,7 +1015,7 @@ img.productSubPhoto {
   color: #825512;
   margin-top: 0;
   margin-bottom: 0;
-  width: 100%;
+  width: 99%;
   padding-left: .2rem;
   padding-right: .2rem;
 }
@@ -1291,7 +1292,7 @@ img.productSubPhoto {
 .sheetCakeIntro {
   margin:0;
   margin-top: 1rem;
-  margin-left: 1.5rem;
+  padding-left: 1.5rem;
   width: 100%;
 }
 
@@ -1311,8 +1312,10 @@ img.productSubPhoto {
 .sheetCakeCardContainer {
   margin: 0 auto;
   padding-top: 3rem;
-  width: 90%;
+  padding-bottom: 2rem;
+  width: 100%;
   display: flex;
+  align-items: center;
   flex-direction: column;
   gap: 4rem;
 }
@@ -1322,7 +1325,7 @@ img.productSubPhoto {
   border-radius: 32px;
   box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.3), /* Key Umbra */
         0px 1px 3px 1px rgba(0, 0, 0, 0.15); /* Key Penumbra */
-  width: 100%;
+  width: 90%;
   display: flex;
   flex-direction: row;
 
@@ -1379,4 +1382,55 @@ h5.sheetStats {
   border-radius: 24px;
   box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.3), /* Key Umbra */
         0px 1px 3px 1px rgba(0, 0, 0, 0.15); /* Key Penumbra */
+}
+
+.sheetCakeCard.dasAuto {
+  display: none;
+}
+
+
+@media (max-width: 771px) {
+  .sheetCakeCard{
+    width: 95%;
+  } 
+
+  .sheetCakeIntro {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sheetCakeIntro h1 {
+    text-align: center;
+  }
+
+  .sheetCakeIntro h5 {
+    text-align: center;
+  }
+
+  .sheetCakeCard.dasAuto{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .sheetCakeCard.norm {
+    display: none;
+  }
+
+  .sheetCakeCard.dasAuto .forImage {
+    height: 20rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-top: 1.5rem;
+    background-image: url("../Photos/Placeholder Image.png");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border-radius: 24px;
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.3), /* Key Umbra */
+          0px 1px 3px 1px rgba(0, 0, 0, 0.15); /* Key Penumbra */
+  }
+
+
 }
