@@ -896,7 +896,7 @@ img.productSubPhoto {
 
 .productText h1 {
   margin-top: 1rem;
-  margin-bottom: 0;
+  margin-bottom: 5vh;
 }
 
 .productText h5 {
