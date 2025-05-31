@@ -121,6 +121,7 @@ html {
   height: 100%-3rem;
   padding:0;
   margin: 0;
+  overflow-x: hidden;
 }
 
 @media (min-width: 1440px) {
@@ -437,7 +438,7 @@ button:hover {
 }
 
 #landingButton1  {
-  border: 2px, #775652, solid;
+  border: 2px #775652 solid;
   background-color: #775652;
   padding: 1rem .6rem;
   display: flex;
@@ -467,7 +468,7 @@ button:hover {
 }
 
 #landingButton2  {
-  border: 2px, #775652, solid;
+  border: 2px #775652 solid;
   background-color: #FFDAD5;
   color: #775652;
   padding: 1rem .6rem;
