@@ -222,6 +222,7 @@ nav {
 .logo img{
     margin-left: .5rem;
 }
+
 }
 
 @media (max-width: 350px) {
@@ -352,18 +353,93 @@ button:hover {
 }
 
 
+/* Styles for the notice bar container */
 .notice {
   height: 3rem;
-  background-color: #904A41;
-  display: flex;
-  align-items: center;
+  background-color: #904A41; /* From your original style.css line 281 */
+  display: flex;             /* Aligns h3 vertically if needed */
+  align-items: center;       /* Aligns h3 vertically */
+  overflow: hidden;          /* VERY IMPORTANT: This hides the text when it's outside */
+  width: 100%;
 }
 
-.notice h3 {
-  color: white;
-  font-size: 1.4rem;
-  font-weight: 300;
+/* Styles for the actual scrolling content */
+.notice-content {
+  display: inline-block;    /* Allows it to be a block that moves */
+  white-space: nowrap;      /* Keeps the text on a single line */
+  /* Start the text completely off-screen to the right */
+  transform: translateX(0%); 
+  
+  /* Animation properties */
+  animation-name: marquee-animation;
+  animation-duration: 15s;        /* Adjust speed as needed */
+  animation-timing-function: linear;
+  animation-iteration-count: infinite; /* This makes it loop! */
+  animation-delay: 0s;            /* Starts immediately */
 }
+
+/* Styles for the h3 inside the notice */
+.notice-content h3 {
+  color: white;                   /* From your original style.css line 286 */
+  font-size: 1.4rem;              /* From your original style.css line 287 */
+  font-weight: 400;               /* From your original style.css line 288 */
+  margin: 0;                      /* Remove default h3 margins */
+  padding-right: 50vw;           /* Add some padding to ensure it clears fully on the left */
+}
+
+/* Keyframes for the animation */
+@keyframes marquee-animation {
+  0% {
+    transform: translateX(100%);   /* Starts completely off-screen to the right */
+  }
+  100% {
+    transform: translateX(-70%);  /* Ends completely off-screen to the left (relative to its own width + padding) */
+  }
+}
+
+@media (max-width: 760px) {
+.notice-content {
+  
+  /* Animation properties */
+  animation-name: marquee-animation;
+  animation-duration: 15s;        /* Adjust speed as needed */
+  animation-timing-function: linear;
+  animation-iteration-count: infinite; /* This makes it loop! */
+  animation-delay: 0s;            /* Starts immediately */
+}
+
+@keyframes marquee-animation {
+  0% {
+    transform: translateX(70%);   /* Starts completely off-screen to the right */
+  }
+  100% {
+    transform: translateX(-70%);  /* Ends completely off-screen to the left (relative to its own width + padding) */
+  }
+}
+}
+
+@media (max-width: 530px) {
+.notice-content {
+  
+  /* Animation properties */
+  animation-name: marquee-animation;
+  animation-duration: 11s;        /* Adjust speed as needed */
+  animation-timing-function: linear;
+  animation-iteration-count: infinite; /* This makes it loop! */
+  animation-delay: 0s;            /* Starts immediately */
+}
+
+@keyframes marquee-animation {
+  0% {
+    transform: translateX(55%);   /* Starts completely off-screen to the right */
+  }
+  100% {
+    transform: translateX(-85%);  /* Ends completely off-screen to the left (relative to its own width + padding) */
+  }
+}
+}
+
+
 
 .landingPage h1{
   margin-left: 2rem;
@@ -597,6 +673,7 @@ button:hover {
     flex-direction: column;
     align-items: center;
     margin-bottom: 2rem;
+    margin-top: 0;
   }
 
   .landingPage h1{
@@ -605,6 +682,7 @@ button:hover {
     margin-bottom: 0rem;
     width: 100%;
     text-align: center;
+    line-height: 4rem;
   }
 
   .homeBody .mainContainer {
