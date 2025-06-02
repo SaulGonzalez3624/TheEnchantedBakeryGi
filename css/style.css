@@ -457,7 +457,7 @@ button:hover {
   width: 40%;
 }
 
-.landingImg.desktop{
+.landingImg.desktop, .landingImg.mobile{
   width: 55%;
   float: right;
   position: absolute;
@@ -470,7 +470,6 @@ button:hover {
 
 .landingImg.mobile {
   display: none;
-  transition: transform 0.3s ease;
 }
 
 @media (max-width: 1110px) {
@@ -485,7 +484,7 @@ button:hover {
   /* CSS that should be displayed if width is less than or more than 920px goes here */
   .landingImg.desktop {
   width: 55%;
-  top: 25%;
+  margin-top: 2.2rem;
   }
 }
 
