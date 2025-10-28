@@ -1483,6 +1483,19 @@ h5.sheetStats {
         0px 1px 3px 1px rgba(0, 0, 0, 0.15); /* Key Penumbra */
 }
 
+.sheetCakeCardRight .forImage  img{
+    width: 100%;
+    height: 100%; 
+    object-fit: cover; 
+    object-position: 50% 70%;
+    border-radius: 24px;
+    filter: brightness(1.2);
+}
+
+.sheetCakeCardRight .forImage #quarterSheetPhoto{
+    object-position: 50% 40%;
+  }
+
 .sheetCakeCard.dasAuto {
   display: none;
 }
@@ -1517,19 +1530,28 @@ h5.sheetStats {
     display: none;
   }
 
-  .sheetCakeCard.dasAuto .forImage {
+  .sheetCakeCard.dasAuto .forImage{
+    overflow: hidden;
     height: 20rem;
     margin-left: 2rem;
     margin-right: 2rem;
     margin-top: 1.5rem;
-    background-image: url("../Photos/Placeholder Image.png");
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
     border-radius: 24px;
     box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.3), /* Key Umbra */
           0px 1px 3px 1px rgba(0, 0, 0, 0.15); /* Key Penumbra */
   }
 
+  .sheetCakeCard.dasAuto .forImage img{
+    width: 100%;
+    height: 100%; 
+    object-fit: cover; 
+    object-position: 50% 80%;
+    border-radius: 24px;
+    filter: brightness(1.2);
+  }
+
+  .sheetCakeCard.dasAuto .forImage #quarterSheetPhoto{
+    object-position: 50% 40%;
+  }
 
 }
