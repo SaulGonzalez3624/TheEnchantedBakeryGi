@@ -357,6 +357,7 @@ button:hover {
 
 /* Styles for the notice bar container */
 .notice {
+  visibility: hidden;
   height: 3rem;
   background-color: #904A41; /* From your original style.css line 281 */
   display: flex;             /* Aligns h3 vertically if needed */
@@ -859,6 +860,8 @@ button:hover {
 
 .menuScrollCard img{
   width: 100%;
+  aspect-ratio: 1.2 / 1;
+  object-fit: cover;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
 }
