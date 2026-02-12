@@ -640,6 +640,12 @@ button:hover {
             0px 1px 3px 1px rgba(0, 0, 0, 0.15); /* Key Penumbra */
 }
 
+.pastriesCard img {
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  filter: brightness(1.2);
+}
+
 .customCakeCard {
   max-width: 50%;
   flex-grow: 1;
