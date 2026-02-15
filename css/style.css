@@ -969,6 +969,53 @@ img.productPhoto {
   filter: brightness(1.2);
 }
 
+/* --- Product Image Hover Effects --- */
+.productPhoto, .productSubPhoto {
+  
+    transition: transform 0.3s ease; /* Smooth animation */
+    cursor: pointer;                 /* Shows a hand pointer so users know it's clickable */
+}
+
+.productPhoto:hover, .productSubPhoto:hover {
+    transform: scale(1.05);          /* Balloons out slightly like the menu cards */
+}
+
+/* --- Lightbox (The Popup) Styles --- */
+.lightbox {
+    position: fixed;
+    z-index: 1000;       /* Sits on top of everything */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(59, 9, 6, 0.9); /* Dark, opaque background (using your brand brown) */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;          /* Hidden by default */
+    pointer-events: none; /* Lets clicks pass through when hidden */
+    transition: opacity 0.3s ease; /* Smooth fade in/out */
+    backdrop-filter: blur(5px); /* Optional: blurs the background slightly */
+}
+
+.lightbox.active {
+    opacity: 1;          /* Fully visible when active */
+    pointer-events: all; /* Catch clicks when active */
+}
+
+.lightbox img {
+    max-width: 90%;      /* Takes up 90% of screen width */
+    max-height: 90%;     /* Takes up 90% of screen height */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
+    border-radius: 12px;
+    transform: scale(0.8); /* Start slightly smaller */
+    transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94); /* "Pop" effect */
+}
+
+.lightbox.active img {
+    transform: scale(1);   /* Scale to full size when active */
+}
+
 #template {
   filter: brightness(1.0);
 }
@@ -986,6 +1033,7 @@ img.productPhoto {
 }
 
 img.productSubPhoto {
+  filter: brightness(1.2);
   display:flex;
   width: calc((100% - 2 * 1.5rem) / 3);
   flex-grow: 0; /* Don't let cards grow to fill a sparse last row */
@@ -1503,7 +1551,24 @@ h5.sheetStats {
 
 .sheetCakeCardRight .forImage #quarterSheetPhoto{
     object-position: 50% 40%;
-  }
+}
+
+  /* --- Sheet Cake Specific Styles --- */
+.sheetCakePhoto {
+  filter: brightness(1.2);
+    width: 100%;
+    height: 100%;       /* Fills the card height perfectly */
+    object-fit: cover;  /* Crops edges instead of stretching */
+    border-radius: 24px;
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.3), 
+                0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease; /* Adds the smooth balloon animation */
+    cursor: pointer;
+}
+
+.sheetCakePhoto:hover {
+    transform: scale(1.05); /* The balloon effect! */
+}
 
 .sheetCakeCard.dasAuto {
   display: none;
@@ -1539,15 +1604,12 @@ h5.sheetStats {
     display: none;
   }
 
-  .sheetCakeCard.dasAuto .forImage{
-    overflow: hidden;
-    height: 20rem;
-    margin-left: 2rem;
-    margin-right: 2rem;
-    margin-top: 1.5rem;
-    border-radius: 24px;
-    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.3), /* Key Umbra */
-          0px 1px 3px 1px rgba(0, 0, 0, 0.15); /* Key Penumbra */
+  .sheetCakeCard.dasAuto .sheetCakePhoto {
+    height: 20rem;              /* Gives it a nice tall height like before */
+    width: calc(100% - 4rem);   /* Calculates width so margins don't push it off screen */
+    margin-left: 2rem;          /* Adds the whitespace on the left */
+    margin-right: 2rem;         /* Adds the whitespace on the right */
+    margin-top: 1.5rem;         /* Adds the whitespace on the top */
   }
 
   .sheetCakeCard.dasAuto .forImage img{

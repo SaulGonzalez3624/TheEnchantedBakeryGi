@@ -41,25 +41,21 @@
     
         <div class = "productContainer norm">
             <div class = "productPhotos">
-                <img src="../Photos/Placeholder Image.png" alt="Product Main Photo" class = "productPhoto" id="template">
+                <img src="../Photos/cake and cookie main photos/Tres Leches Strawberry 8inch.JPG" alt="Product Main Photo" class = "productPhoto">
                 
                 <div class = "productSubPhotoContainer">
                     <img src="../Photos/Placeholder Image.png" alt="Product Sub Photo" class = "productSubPhoto">
                     <img src="../Photos/Placeholder Image.png" alt="Product Sub Photo" class = "productSubPhoto">
                     <img src="../Photos/Placeholder Image.png" alt="Product Sub Photo" class = "productSubPhoto">
                     <img src="../Photos/Placeholder Image.png" alt="Product Sub Photo" class = "productSubPhoto">
-                    <img src="../Photos/Placeholder Image.png" alt="Product Sub Photo" class = "productSubPhoto">
                 </div>
+                
+                
             </div>
             
             <div class = "productText">
-                <h1>TEMPLATE PRODUCT PAGE</h1>
-                <h5>Our classic Tres Leches is a light sponge cake soaked in a blend of three different types of milk, topped with whipped cream and comes with peach filling. THIS IS A TEMPLATE!1!!</h5>
-                <div class = "productStats">
-                    <h5><strong>Size:</strong> 8-inch Round</h5>
-                    <h5><strong>Serves:</strong> 6-8 people</h5>
-                    <h5><strong>Price:</strong> <u>$24.00*</u></h5>
-                </div>
+                <h1>Birthday Cakes</h1>
+                <h5>Celebrate your special day with a cake as special as you! We have a large selection of flavors and decoration to choose from. Call to order your special cake today!</h5>
 
                 <div class = "productCallContainer">
                     <a href="tel:+13083832255">
@@ -82,19 +78,13 @@
             
             
             <div class = "productText">
-                <h1>TEMPLATE PRODUCT PAGE</h1>
-                <h5>Our classic Tres Leches is a light sponge cake soaked in a blend of three different types of milk, topped with whipped cream and comes with peach filling. THIS IS A TEMPLATE!1!!</h5>
-                <div class = "productStats">
-                    <h5><strong>Size:</strong> 8-inch Round</h5>
-                    <h5><strong>Serves:</strong> 6-8 people</h5>
-                    <h5><strong>Price:</strong> <u>$24.00*</u></h5>
-                </div>
+                <h1>Birthday Cakes</h1>
+                <h5>Celebrate your day with a cake as special as you! We have a large selection of flavors and decoration to choose from. Call to order your special cake today!</h5>
 
                 <div class = "productPhotos">
-                    <img src="../Photos/Placeholder Image.png" alt="Product Main Photo" class = "productPhoto" id="template">
+                    <img src="../Photos/cake and cookie main photos/Tres Leches Strawberry 8inch.JPG" alt="Product Main Photo" class = "productPhoto">
                     
                     <div class = "productSubPhotoContainer">
-                        <img src="../Photos/Placeholder Image.png" alt="Product Sub Photo" class = "productSubPhoto">
                         <img src="../Photos/Placeholder Image.png" alt="Product Sub Photo" class = "productSubPhoto">
                         <img src="../Photos/Placeholder Image.png" alt="Product Sub Photo" class = "productSubPhoto">
                         <img src="../Photos/Placeholder Image.png" alt="Product Sub Photo" class = "productSubPhoto">
@@ -114,47 +104,13 @@
             </div>
         </div>
 
-        <div class = "footerPrice">
-            <h5>*Please note: All listed prices are base rates for our cakes with standard decoration. For custom designs or specific requests, the final price may vary; please contact us for a personalized quote.</h5>
+        <div style="opacity:0;" class = "footerPrice">
+            <h5>*For custom designs or specific requests; please contact us for a personalized quote.</h5>
         </div>
         <div class = "footer">
             <h1 class = "footerTitle">The Enchanted Bakery</h1>
             <h2 class = "footerCopyright">© The Enchanted Bakery 2025</h2>
         </div>
     </div>
-
-
-
-    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
-        <img id="lightbox-img" src="" alt="Enlarged Image">
-    </div>
-
-    <script>
-        function openLightbox(imageSrc) {
-            const lightbox = document.getElementById('lightbox');
-            const lightboxImg = document.getElementById('lightbox-img');
-            
-            // Set the source of the big image to be the same as the one clicked
-            lightboxImg.src = imageSrc;
-            
-            // Show the lightbox
-            lightbox.classList.add('active');
-        }
-
-        function closeLightbox() {
-            const lightbox = document.getElementById('lightbox');
-            
-            // Hide the lightbox
-            lightbox.classList.remove('active');
-        }
-
-        // Add click events to all product photos automatically
-        document.addEventListener('DOMContentLoaded', () => {
-            const images = document.querySelectorAll('.productPhoto, .productSubPhoto');
-            images.forEach(img => {
-                img.addEventListener('click', () => openLightbox(img.src));
-            });
-        });
-    </script>
 </body>
 </html>

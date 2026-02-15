@@ -22,7 +22,7 @@
                 <a href="../index.html"><h4>Home</h4></a>
             </div>
             <div id="menu">
-                <u class="navUnderline"><h4>Menu</h4></u>
+                <a href="../menu.html"><u class="navUnderline"><h4>Menu</h4></u></a>
             </div>
             <div id="hours">
                 <a href="../hours.html"><h4>Hours</h4></a>
@@ -46,7 +46,7 @@
             
             <div class = "productText">
                 <h1>Box of Cookies</h1>
-                <h5>ENTER DESCRIPTION.</h5>
+                <h5>Delicious cookies in 6 flavors: cinnamon, walnut, almond, chocolate, oatmeal, and a favorite - apricot. A desert you cannot stop eating!</h5>
                 <div class = "productStats">
                     <h5><strong>Size:</strong> 24 Cookies</h5>
                     <h5><strong>Serves:</strong> 1-2 people</h5>
@@ -75,7 +75,7 @@
             
             <div class = "productText">
                 <h1>Box of Cookies</h1>
-                <h5>ENTER DESCRIPTION</h5>
+                <h5>Delicious cookies in 6 flavors: cinnamon, walnut, almond, chocolate, oatmeal, and a favorite - apricot. A desert you cannot stop eating!</h5>
                 <div class = "productStats">
                     <h5><strong>Size:</strong> 24 Cookies</h5>
                     <h5><strong>Serves:</strong> 1-2 people</h5>
@@ -106,5 +106,38 @@
             <h2 class = "footerCopyright">© The Enchanted Bakery 2025</h2>
         </div>
     </div>
+
+    
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+        <img id="lightbox-img" src="" alt="Enlarged Image">
+    </div>
+
+    <script>
+        function openLightbox(imageSrc) {
+            const lightbox = document.getElementById('lightbox');
+            const lightboxImg = document.getElementById('lightbox-img');
+            
+            // Set the source of the big image to be the same as the one clicked
+            lightboxImg.src = imageSrc;
+            
+            // Show the lightbox
+            lightbox.classList.add('active');
+        }
+
+        function closeLightbox() {
+            const lightbox = document.getElementById('lightbox');
+            
+            // Hide the lightbox
+            lightbox.classList.remove('active');
+        }
+
+        // Add click events to all product photos automatically
+        document.addEventListener('DOMContentLoaded', () => {
+            const images = document.querySelectorAll('.productPhoto, .productSubPhoto');
+            images.forEach(img => {
+                img.addEventListener('click', () => openLightbox(img.src));
+            });
+        });
+    </script>
 </body>
 </html>
