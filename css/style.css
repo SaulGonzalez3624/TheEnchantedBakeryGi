@@ -118,7 +118,7 @@ html {
   font-size: 16px;
   font-family: Poppins, sans-serif !important;
   scroll-behavior: smooth;
-  height: 100%-3rem;
+  height: calc(100% - 3rem);
   padding:0;
   margin: 0;
   overflow-x: hidden;
@@ -146,8 +146,8 @@ body {
   margin:0;
   padding: 0;
   overflow-x: hidden;
-  background-size: cover;          /* Scales image to cover entire body */
-  background-repeat: no-repeat;    /* Important: prevents tiling */
+  background-size: cover;       
+  background-repeat: no-repeat;   
   background-attachment: fixed;
   padding-top: 3rem;
 }
@@ -189,8 +189,8 @@ nav {
     align-items: center;
     justify-content: space-between;
     background-color: #FFF8F7;
-    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.3), /* Key Umbra */
-              0px 1px 3px 1px rgba(0, 0, 0, 0.15); /* Key Penumbra */
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.3),  
+              0px 1px 3px 1px rgba(0, 0, 0, 0.15);  
     position: fixed;
     top: 0;
     width: 100vw;
@@ -324,8 +324,8 @@ button:hover {
   display:flex;
   flex-direction: column;
   min-height: calc(100vh - 3rem);
-  width: 100%; /* or width: 100vw; */
-  overflow-x: hidden; /* This is the key! */
+  width: 100%; 
+  overflow-x: hidden; 
 }
 
 .productContainer, .mainContainer{
@@ -355,48 +355,43 @@ button:hover {
 }
 
 
-/* Styles for the notice bar container */
 .notice {
   visibility: hidden;
   height: 3rem;
-  background-color: #904A41; /* From your original style.css line 281 */
-  display: flex;             /* Aligns h3 vertically if needed */
-  align-items: center;       /* Aligns h3 vertically */
-  overflow: hidden;          /* VERY IMPORTANT: This hides the text when it's outside */
+  background-color: #904A41; 
+  display: flex;             
+  align-items: center;       
+  overflow: hidden;          
   width: 100%;
 }
 
-/* Styles for the actual scrolling content */
 .notice-content {
-  display: inline-block;    /* Allows it to be a block that moves */
-  white-space: nowrap;      /* Keeps the text on a single line */
-  /* Start the text completely off-screen to the right */
+  display: inline-block;    
+  white-space: nowrap;      
   transform: translateX(0%); 
   
-  /* Animation properties */
   animation-name: marquee-animation;
-  animation-duration: 15s;        /* Adjust speed as needed */
+  animation-duration: 15s;      
   animation-timing-function: linear;
-  animation-iteration-count: infinite; /* This makes it loop! */
-  animation-delay: 0s;            /* Starts immediately */
+  animation-iteration-count: infinite; 
+  animation-delay: 0s;          
 }
 
-/* Styles for the h3 inside the notice */
 .notice-content h3 {
-  color: white;                   /* From your original style.css line 286 */
-  font-size: 1.4rem;              /* From your original style.css line 287 */
-  font-weight: 400;               /* From your original style.css line 288 */
-  margin: 0;                      /* Remove default h3 margins */
-  padding-right: 50vw;           /* Add some padding to ensure it clears fully on the left */
+  color: white;                
+  font-size: 1.4rem;       
+  font-weight: 400;         
+  margin: 0;             
+  padding-right: 50vw;         
 }
 
 /* Keyframes for the animation */
 @keyframes marquee-animation {
   0% {
-    transform: translateX(100%);   /* Starts completely off-screen to the right */
+    transform: translateX(100%); 
   }
   100% {
-    transform: translateX(-70%);  /* Ends completely off-screen to the left (relative to its own width + padding) */
+    transform: translateX(-70%);  
   }
 }
 
@@ -405,18 +400,18 @@ button:hover {
   
   /* Animation properties */
   animation-name: marquee-animation;
-  animation-duration: 15s;        /* Adjust speed as needed */
+  animation-duration: 15s;        /* ts speed */
   animation-timing-function: linear;
-  animation-iteration-count: infinite; /* This makes it loop! */
-  animation-delay: 0s;            /* Starts immediately */
+  animation-iteration-count: infinite; 
+  animation-delay: 0s;     
 }
 
 @keyframes marquee-animation {
   0% {
-    transform: translateX(70%);   /* Starts completely off-screen to the right */
+    transform: translateX(70%); 
   }
   100% {
-    transform: translateX(-70%);  /* Ends completely off-screen to the left (relative to its own width + padding) */
+    transform: translateX(-70%); 
   }
 }
 }
@@ -426,18 +421,18 @@ button:hover {
   
   /* Animation properties */
   animation-name: marquee-animation;
-  animation-duration: 11s;        /* Adjust speed as needed */
+  animation-duration: 11s;        /* ts the ishowspeed */
   animation-timing-function: linear;
-  animation-iteration-count: infinite; /* This makes it loop! */
-  animation-delay: 0s;            /* Starts immediately */
+  animation-iteration-count: infinite;
+  animation-delay: 0s;     
 }
 
 @keyframes marquee-animation {
   0% {
-    transform: translateX(55%);   /* Starts completely off-screen to the right */
+    transform: translateX(55%); 
   }
   100% {
-    transform: translateX(-85%);  /* Ends completely off-screen to the left (relative to its own width + padding) */
+    transform: translateX(-85%); 
   }
 }
 }
@@ -527,8 +522,8 @@ button:hover {
   height: 2.5rem;
   font-size: 2rem;
   border-radius: 12px;
-  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.3), /* Key Umbra */
-            0px 1px 3px 1px rgba(0, 0, 0, 0.15); /* Key Penumbra */
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.3),  
+            0px 1px 3px 1px rgba(0, 0, 0, 0.15);  
   transition: 0.3s ease;
 }
 
@@ -558,8 +553,8 @@ button:hover {
   height: 2.5rem;
   font-size: 2rem;
   border-radius: 12px;
-  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.3), /* Key Umbra */
-             0px 1px 3px 1px rgba(0, 0, 0, 0.15); /* Key Penumbra */
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.3),  
+             0px 1px 3px 1px rgba(0, 0, 0, 0.15);  
   transition: 0.3s ease;
 }
 
@@ -612,8 +607,8 @@ button:hover {
   width: 75%;
   border-radius: 1000px;
   border: 4px #904A41 solid;
-  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.3), /* Key Umbra */
-            0px 1px 3px 1px rgba(0, 0, 0, 0.15); /* Key Penumbra */
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.3),  
+            0px 1px 3px 1px rgba(0, 0, 0, 0.15);  
 }
 
 .cakeCard {
@@ -624,8 +619,8 @@ button:hover {
   background-color: #FFDAD5;
   margin: 1rem;
   border-radius: 48px;
-  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.3), /* Key Umbra */
-            0px 1px 3px 1px rgba(0, 0, 0, 0.15); /* Key Penumbra */
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.3),  
+            0px 1px 3px 1px rgba(0, 0, 0, 0.15);  
 }
 
 .pastriesCard {
@@ -636,8 +631,8 @@ button:hover {
   background-color: #FFDAD5;
   margin: 1rem;
   border-radius: 48px;
-  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.3), /* Key Umbra */
-            0px 1px 3px 1px rgba(0, 0, 0, 0.15); /* Key Penumbra */
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.3),  
+            0px 1px 3px 1px rgba(0, 0, 0, 0.15);  
 }
 
 .pastriesCard img {
@@ -654,8 +649,8 @@ button:hover {
   background-color: #FFDAD5;
   margin: 1rem;
   border-radius: 48px;
-  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.3), /* Key Umbra */
-            0px 1px 3px 1px rgba(0, 0, 0, 0.15); /* Key Penumbra */
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.3),  
+            0px 1px 3px 1px rgba(0, 0, 0, 0.15); 
 }
 
 .learnMore {
@@ -668,8 +663,8 @@ button:hover {
   border: 2px #825512 solid;
   margin-bottom: 1.2rem;
   font-weight: 500;
-  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.3), /* Key Umbra */
-          0px 1px 3px 1px rgba(0, 0, 0, 0.05); /* Key Penumbra */
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.3), 
+          0px 1px 3px 1px rgba(0, 0, 0, 0.05); 
 }
 
 
@@ -824,15 +819,15 @@ button:hover {
 .menuScrollCard {
   display:flex;
   flex-basis: calc(20% - 1rem);
-  flex-grow: 0; /* Don't let cards grow to fill a sparse last row */
+  flex-grow: 0; 
   flex-shrink: 0;
   flex-shrink: 0;
   background-color: #FFEDEA;
   flex-direction: column;
   align-items: center;
   border-radius: 15px;
-  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.3), /* Key Umbra */
-          0px 1px 3px 1px rgba(0, 0, 0, 0.15); /* Key Penumbra */
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.3), 
+          0px 1px 3px 1px rgba(0, 0, 0, 0.15);
   transition: all 0.15s ease;
 }
 
@@ -878,13 +873,8 @@ button:hover {
 
 #menuCakeSection,
 #menuFinePastriesSection,
-#menuCustomCakeSection { /* Add any other section IDs you might have */
-  scroll-margin-top: 1.8rem; /* ADJUST THIS VALUE! */
-                           /* It should be equal to or slightly LARGER than
-                              the height of your fixed navigation bar.
-                              If your navbar is 3.5rem or 4rem high,
-                              5rem should give enough clearance.
-                              Experiment with this value until it looks right. */
+#menuCustomCakeSection { 
+  scroll-margin-top: 1.8rem; 
 }
 
 
@@ -906,7 +896,7 @@ button:hover {
   background-image: url("../Background Photos/Product-Page-Background.png");
 }
 
-.pageWrapper a.omgImTired {
+.pageWrapper a.backIcon {
   text-decoration: none;
   display: flex;
   align-items: center;
@@ -922,8 +912,8 @@ button:hover {
   border: 0;
   border-radius: 12px;
   border: 2px #471613 solid;
-  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.3), /* Key Umbra */
-          0px 1px 3px 1px rgba(0, 0, 0, 0.15); /* Key Penumbra */
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.3), 
+          0px 1px 3px 1px rgba(0, 0, 0, 0.15); 
 }
 
 .backButton img {
@@ -963,8 +953,8 @@ img.productPhoto {
   display: block;
   object-fit: cover;
   border-radius: 28px;
-  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.3), /* Key Umbra */
-        0px 1px 3px 1px rgba(0, 0, 0, 0.15); /* Key Penumbra */
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.3), 
+        0px 1px 3px 1px rgba(0, 0, 0, 0.15);
   margin-bottom: .5rem;
   filter: brightness(1.2);
 }
@@ -973,18 +963,18 @@ img.productPhoto {
   filter: brightness(1) !important;
 }
 
-/* --- Product Image Hover Effects --- */
+/* Hover Effectssssss */
 .productPhoto, .productSubPhoto {
   
-    transition: transform 0.3s ease; /* Smooth animation */
-    cursor: pointer;                 /* Shows a hand pointer so users know it's clickable */
+    transition: transform 0.3s ease; 
+    cursor: pointer;           
 }
 
 .productPhoto:hover, .productSubPhoto:hover {
-    transform: scale(1.05);          /* Balloons out slightly like the menu cards */
+    transform: scale(1.05);        
 }
 
-/* --- Lightbox (The Popup) Styles --- */
+/* Lightbox thing*/
 .lightbox {
     position: fixed;
     z-index: 1000;       /* Sits on top of everything */
@@ -992,32 +982,32 @@ img.productPhoto {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(59, 9, 6, 0.9); /* Dark, opaque background (using your brand brown) */
+    background-color: rgba(59, 9, 6, 0.9); 
     display: flex;
     justify-content: center;
     align-items: center;
-    opacity: 0;          /* Hidden by default */
-    pointer-events: none; /* Lets clicks pass through when hidden */
-    transition: opacity 0.3s ease; /* Smooth fade in/out */
-    backdrop-filter: blur(5px); /* Optional: blurs the background slightly */
+    opacity: 0;       
+    pointer-events: none;
+    transition: opacity 0.3s ease; 
+    backdrop-filter: blur(5px); 
 }
 
 .lightbox.active {
-    opacity: 1;          /* Fully visible when active */
-    pointer-events: all; /* Catch clicks when active */
+    opacity: 1;          
+    pointer-events: all; 
 }
 
 .lightbox img {
-    max-width: 90%;      /* Takes up 90% of screen width */
-    max-height: 90%;     /* Takes up 90% of screen height */
+    max-width: 90%;      
+    max-height: 90%;    
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
     border-radius: 12px;
-    transform: scale(0.8); /* Start slightly smaller */
-    transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94); /* "Pop" effect */
+    transform: scale(0.8); 
+    transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94); 
 }
 
 .lightbox.active img {
-    transform: scale(1);   /* Scale to full size when active */
+    transform: scale(1);   
 }
 
 #template {
@@ -1040,12 +1030,12 @@ img.productSubPhoto {
   filter: brightness(1.2);
   display:flex;
   width: calc((100% - 2 * 1.5rem) / 3);
-  flex-grow: 0; /* Don't let cards grow to fill a sparse last row */
+  flex-grow: 0; 
   flex-shrink: 0;
   flex-shrink: 0;
   border-radius: 15px;
-  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.3), /* Key Umbra */
-          0px 1px 3px 1px rgba(0, 0, 0, 0.15); /* Key Penumbra */
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.3), 
+          0px 1px 3px 1px rgba(0, 0, 0, 0.15);
   transition: all 0.15s ease;
 
   aspect-ratio: 1 / 1;   
@@ -1091,8 +1081,8 @@ img.productSubPhoto {
   border: 2px #825512 solid;
   background-color: #FFDDB7;
   border-radius: 24px;
-  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.3), /* Key Umbra */
-          0px 1px 3px 1px rgba(0, 0, 0, 0.15); /* Key Penumbra */
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.3), 
+          0px 1px 3px 1px rgba(0, 0, 0, 0.15); 
 }
 
 .productCall:hover {
@@ -1221,8 +1211,8 @@ img.productSubPhoto {
   background-color: #FFEDEA;
   padding: 1rem;
   border-radius: 20px;
-  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.3), /* Key Umbra */
-          0px 1px 3px 1px rgba(0, 0, 0, 0.15); /* Key Penumbra */
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.3), 
+          0px 1px 3px 1px rgba(0, 0, 0, 0.15);
 }
 
 .visitUs h2 {
@@ -1248,8 +1238,8 @@ img.productSubPhoto {
   background-color: #FFEDEA;
   padding: 1rem;
   border-radius: 20px;
-  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.3), /* Key Umbra */
-          0px 1px 3px 1px rgba(0, 0, 0, 0.15); /* Key Penumbra */
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.3), 
+          0px 1px 3px 1px rgba(0, 0, 0, 0.15); 
 }
 
 .contactUs h2 {
@@ -1296,8 +1286,8 @@ img.productSubPhoto {
   border-radius: 20px;
   width: 100%;
   height: 100%;
-  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.3), /* Key Umbra */
-        0px 1px 3px 1px rgba(0, 0, 0, 0.15); /* Key Penumbra */
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.3), 
+        0px 1px 3px 1px rgba(0, 0, 0, 0.15);
 }
 
 .dailyHours {
@@ -1306,8 +1296,8 @@ img.productSubPhoto {
 
   padding: 1rem 1rem;
   border-radius: 20px;
-  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.3), /* Key Umbra */
-        0px 1px 3px 1px rgba(0, 0, 0, 0.15); /* Key Penumbra */
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.3), 
+        0px 1px 3px 1px rgba(0, 0, 0, 0.15); 
 }
 
 .dailyHours h2 {
@@ -1486,8 +1476,8 @@ img.productSubPhoto {
 .sheetCakeCard {
   background-color: #FFEDEA;
   border-radius: 32px;
-  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.3), /* Key Umbra */
-        0px 1px 3px 1px rgba(0, 0, 0, 0.15); /* Key Penumbra */
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.3), 
+        0px 1px 3px 1px rgba(0, 0, 0, 0.15); 
   width: 90%;
   display: flex;
   flex-direction: row;
@@ -1543,8 +1533,8 @@ h5.sheetStats {
   background-position: center center;
   background-repeat: no-repeat;
   border-radius: 24px;
-  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.3), /* Key Umbra */
-        0px 1px 3px 1px rgba(0, 0, 0, 0.15); /* Key Penumbra */
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.3), 
+        0px 1px 3px 1px rgba(0, 0, 0, 0.15);
 }
 
 .sheetCakeCardRight .forImage  img{
@@ -1560,21 +1550,21 @@ h5.sheetStats {
     object-position: 50% 40%;
 }
 
-  /* --- Sheet Cake Specific Styles --- */
+  /* Sheet Cake Specific Styles */
 .sheetCakePhoto {
   filter: brightness(1.2);
     width: 100%;
-    height: 100%;       /* Fills the card height perfectly */
-    object-fit: cover;  /* Crops edges instead of stretching */
+    height: 100%;       
+    object-fit: cover;  
     border-radius: 24px;
     box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.3), 
                 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
-    transition: transform 0.3s ease; /* Adds the smooth balloon animation */
+    transition: transform 0.3s ease; 
     cursor: pointer;
 }
 
 .sheetCakePhoto:hover {
-    transform: scale(1.05); /* The balloon effect! */
+    transform: scale(1.05); 
 }
 
 .sheetCakeCard.dasAuto {
@@ -1612,11 +1602,11 @@ h5.sheetStats {
   }
 
   .sheetCakeCard.dasAuto .sheetCakePhoto {
-    height: 20rem;              /* Gives it a nice tall height like before */
-    width: calc(100% - 4rem);   /* Calculates width so margins don't push it off screen */
-    margin-left: 2rem;          /* Adds the whitespace on the left */
-    margin-right: 2rem;         /* Adds the whitespace on the right */
-    margin-top: 1.5rem;         /* Adds the whitespace on the top */
+    height: 20rem;             
+    width: calc(100% - 4rem);   
+    margin-left: 2rem;         
+    margin-right: 2rem;      
+    margin-top: 1.5rem;     
   }
 
   .sheetCakeCard.dasAuto .forImage img{
