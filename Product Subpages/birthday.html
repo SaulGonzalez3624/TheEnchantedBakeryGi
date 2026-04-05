@@ -41,13 +41,13 @@
     
         <div class = "productContainer norm">
             <div class = "productPhotos">
-                <img src="../Photos/cake and cookie main photos/Tres Leches Strawberry 8inch.JPG" alt="Product Main Photo" class = "productPhoto">
+                <img src="../Photos/Custom Cakes/Tiered Cake with Roses The Enchanted Bakery.png" alt="Product Main Photo" class = "productPhoto customPhoto">
                 
                 <div class = "productSubPhotoContainer">
-                    <img src="../Photos/Placeholder Image.png" alt="Product Sub Photo" class = "productSubPhoto">
-                    <img src="../Photos/Placeholder Image.png" alt="Product Sub Photo" class = "productSubPhoto">
-                    <img src="../Photos/Placeholder Image.png" alt="Product Sub Photo" class = "productSubPhoto">
-                    <img src="../Photos/Placeholder Image.png" alt="Product Sub Photo" class = "productSubPhoto">
+                    <img src="../Photos/Custom Cakes/Tall gold and pink cake The Enchanted Bakery.png" alt="Product Sub Photo" class = "productSubPhoto customPhoto">
+                    <img src="../Photos/Custom Cakes/Oh Baby tiered cake with purple flowers The Enchanted Bakery.png" alt="Product Sub Photo" class = "productSubPhoto customPhoto customPhoto">
+                    <img src="../Photos/Placeholder Image.png" alt="Product Sub Photo" class = "productSubPhoto customPhoto customPhoto">
+                    <img src="../Photos/Placeholder Image.png" alt="Product Sub Photo" class = "productSubPhoto customPhoto customPhoto">
                 </div>
                 
                 
@@ -82,13 +82,13 @@
                 <h5>Celebrate your day with a cake as special as you! We have a large selection of flavors and decoration to choose from. Call to order your special cake today!</h5>
 
                 <div class = "productPhotos">
-                    <img src="../Photos/cake and cookie main photos/Tres Leches Strawberry 8inch.JPG" alt="Product Main Photo" class = "productPhoto">
+                    <img src="../Photos/Custom Cakes/Tiered Cake with Roses The Enchanted Bakery.png" alt="Product Main Photo" class = "productPhoto customPhoto">
                     
                     <div class = "productSubPhotoContainer">
-                        <img src="../Photos/Placeholder Image.png" alt="Product Sub Photo" class = "productSubPhoto">
-                        <img src="../Photos/Placeholder Image.png" alt="Product Sub Photo" class = "productSubPhoto">
-                        <img src="../Photos/Placeholder Image.png" alt="Product Sub Photo" class = "productSubPhoto">
-                        <img src="../Photos/Placeholder Image.png" alt="Product Sub Photo" class = "productSubPhoto">
+                        <img src="../Photos/Custom Cakes/Tall gold and pink cake The Enchanted Bakery.png" alt="Product Sub Photo" class = "productSubPhoto customPhoto">
+                    <img src="../Photos/Custom Cakes/Oh Baby tiered cake with purple flowers The Enchanted Bakery.png" alt="Product Sub Photo" class = "productSubPhoto customPhoto customPhoto">
+                        <img src="../Photos/Placeholder Image.png" alt="Product Sub Photo" class = "productSubPhoto customPhoto">
+                        <img src="../Photos/Placeholder Image.png" alt="Product Sub Photo" class = "productSubPhoto customPhoto">
                     </div>
                 </div>
 
@@ -112,5 +112,38 @@
             <h2 class = "footerCopyright">© The Enchanted Bakery 2025</h2>
         </div>
     </div>
+
+    
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+        <img id="lightbox-img" src="" alt="Enlarged Image">
+    </div>
+
+    <script>
+        function openLightbox(imageSrc) {
+            const lightbox = document.getElementById('lightbox');
+            const lightboxImg = document.getElementById('lightbox-img');
+            
+            // Set the source of the big image to be the same as the one clicked
+            lightboxImg.src = imageSrc;
+            
+            // Show the lightbox
+            lightbox.classList.add('active');
+        }
+
+        function closeLightbox() {
+            const lightbox = document.getElementById('lightbox');
+            
+            // Hide the lightbox
+            lightbox.classList.remove('active');
+        }
+
+        // Add click events to all product photos automatically
+        document.addEventListener('DOMContentLoaded', () => {
+            const images = document.querySelectorAll('.productPhoto, .productSubPhoto');
+            images.forEach(img => {
+                img.addEventListener('click', () => openLightbox(img.src));
+            });
+        });
+    </script>
 </body>
 </html>
