@@ -1284,6 +1284,10 @@ img.productSubPhoto {
   margin: 0;
 }
 
+.contactUs a h5 {
+    text-decoration: underline;
+}
+
 .contactUs div {
   display: flex;
 }
