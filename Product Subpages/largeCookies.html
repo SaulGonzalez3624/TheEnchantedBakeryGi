@@ -112,30 +112,60 @@
         <img id="lightbox-img" src="" alt="Enlarged Image">
     </div>
 
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+        <span class="lightbox-arrow left-arrow" onclick="prevImage(event)">&#10094;</span>
+        <img id="lightbox-img" src="" alt="Enlarged Image" onclick="event.stopPropagation()">
+        <span class="lightbox-arrow right-arrow" onclick="nextImage(event)">&#10095;</span>
+    </div>
+
     <script>
-        function openLightbox(imageSrc) {
+        let currentImageIndex = 0;
+        let lightboxImages = [];
+
+        function openLightbox(index) {
+            currentImageIndex = index;
             const lightbox = document.getElementById('lightbox');
             const lightboxImg = document.getElementById('lightbox-img');
             
-            // Set the source of the big image to be the same as the one clicked
-            lightboxImg.src = imageSrc;
-            
-            // Show the lightbox
+            lightboxImg.src = lightboxImages[currentImageIndex].src;
             lightbox.classList.add('active');
         }
 
         function closeLightbox() {
-            const lightbox = document.getElementById('lightbox');
-            
-            // Hide the lightbox
-            lightbox.classList.remove('active');
+            document.getElementById('lightbox').classList.remove('active');
         }
 
-        // Add click events to all product photos automatically
+        function nextImage(event) {
+            if (event) event.stopPropagation();
+            currentImageIndex = (currentImageIndex + 1) % lightboxImages.length;
+            document.getElementById('lightbox-img').src = lightboxImages[currentImageIndex].src;
+        }
+
+        function prevImage(event) {
+            if (event) event.stopPropagation();
+            currentImageIndex = (currentImageIndex - 1 + lightboxImages.length) % lightboxImages.length;
+            document.getElementById('lightbox-img').src = lightboxImages[currentImageIndex].src;
+        }
+
         document.addEventListener('DOMContentLoaded', () => {
-            const images = document.querySelectorAll('.productPhoto, .productSubPhoto');
-            images.forEach(img => {
-                img.addEventListener('click', () => openLightbox(img.src));
+            const images = document.querySelectorAll('.productPhoto, .productSubPhoto, .sheetCakePhoto');
+            lightboxImages = Array.from(images);
+            
+            lightboxImages.forEach((img, index) => {
+                img.addEventListener('click', () => openLightbox(index));
+            });
+
+            document.addEventListener('keydown', (e) => {
+                const lightbox = document.getElementById('lightbox');
+                if (lightbox.classList.contains('active')) {
+                    if (e.key === 'ArrowRight') {
+                        nextImage();
+                    } else if (e.key === 'ArrowLeft') {
+                        prevImage();
+                    } else if (e.key === 'Escape') {
+                        closeLightbox();
+                    }
+                }
             });
         });
     </script>
